@@ -9,7 +9,7 @@ Config ParseArguments(int argc, char* argv[]) {
         if (argument == "-h" || argument == "--help") {
             config.showHelp = true;
             break;
-        } else if (argument == "-o") {
+        } else if (argument == "-o" || argument == "--output") {
             i++;
             if (i >= argc) {
                 config.error = true;
