@@ -3,6 +3,6 @@
 // TODO: Meowwowowowow
 
 int main(void) {
-	llvm::outs() << "LLVM should be functioning\n";
-	return 0;
+    llvm::outs() << "LLVM should be functioning\n";
+    return 0;
 }
