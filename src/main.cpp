@@ -15,7 +15,7 @@ int main(int argc, char* argv[]) {
     }
 
     if (config.showHelp) {
-        std::cout << "Usage: tobe [options] [file]\n\n"
+        std::cout << "Usage: tobe [options] file\n\n"
                   << "Options:\n"
                   << "  -h, --help      Display this information.\n"
                   << "  -o <file>       Place the output into <file>.\n"
