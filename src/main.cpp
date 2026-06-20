@@ -17,7 +17,12 @@ int main(int argc, char* argv[]) {
     if (config.showHelp) {
         std::cout << "Usage: tobe [options] [file]\n\n"
                   << "Options:\n"
-                  << "  -h, --help      Display this information.\n";
+                  << "  -h, --help      Display this information.\n"
+                  << "  -o <file>       Place the output into <file>.\n"
+                  << "  -O0             No optimization (default).\n"
+                  << "  -O1             Optimization.\n"
+                  << "  -O2             More optimization.\n"
+                  << "  -O3             Even more optimization.\n";
         return return_value;
     }
 
