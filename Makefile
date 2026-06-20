@@ -25,7 +25,7 @@ release: $(RELOBJS)
 
 debug: $(DBGOBJS)
 	$(C) $(GENFLAGS) $(DBGFLAGS) -o tobe $^
-	@echo "Debug build finisged run with ./tobe"
+	@echo "Debug build finished run with ./tobe"
 
 target/debug/%.o: src/%.cpp $(HEADERS)
 	@mkdir -p $(dir $@)
