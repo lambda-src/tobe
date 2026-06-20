@@ -1,4 +1,5 @@
 #include "include/config.hpp"
+#include <filesystem>
 
 Config ParseArguments(int argc, char* argv[]) {
     Config config;
@@ -34,6 +35,11 @@ Config ParseArguments(int argc, char* argv[]) {
     if (config.inputFile.empty()) {
         config.error = true;
         config.errorMessage = "no input file";
+        config.showHelp = true;
+    } else if (!std::filesystem::exists(config.inputFile)) {
+        config.error = true;
+        config.errorMessage =
+            "input file '" + config.inputFile + "' doesn't exist";
         config.showHelp = true;
     }
 
